@@ -15,8 +15,8 @@ def just_do_it(func):
                 return self.real + 5
             case _:
                 raise TypeError('справа от знака "+" непонятный текст. Если что, я понимаю текстом цифры с 1 по 5.')
-    return wrapper
 
+    return wrapper
 
 
 class Int(int):
@@ -32,5 +32,5 @@ if __name__ == '__main__':
     print(x + 'один')  # 6
     print(x + 'пять')  # 10
     print(x + 'шесть')  # TypeError: справа от знака "+" непонятный текст. Если что, я понимаю текстом цифры с 1 по 5.
-    print( x + 'a')  # TypeError: справа от знака "+" непонятный текст. Если что, я понимаю текстом цифры с 1 по 5.
+    print(x + 'a')  # TypeError: справа от знака "+" непонятный текст. Если что, я понимаю текстом цифры с 1 по 5.
     print(x + (1,))  # TypeError: unsupported operand type(s) for +: 'Int' and 'tuple'
