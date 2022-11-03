@@ -21,13 +21,13 @@ def just_do_it(func):
 
 class Int(int):
     @just_do_it
-    def __add__(self, other):
-        return super().__add__(other)
+    def __add__(self):
+        return super().__add__()
 
 
 if __name__ == '__main__':
     x = Int(5)
-    print(x + '1')
+    print(x + '3')
     print(x + '5')  # 10
     print(x + 'один')  # 6
     print(x + 'пять')  # 10
